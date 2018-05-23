@@ -21,15 +21,29 @@ describe 'A game of rock paper scissors' do
     expect(game).to be_started
   end
 
-  it 'can not be played if it has not started' do
-    game = Game.new
-    expect { game.play }.to raise_error(RuntimeError)
-  end
+  describe 'playing' do
 
-  it 'can be played if it has started' do
-    game = Game.new
-    game.start
-    expect { game.play }.to_not raise_error
+    context 'without starting' do
+      it 'can not be played if it has not started' do
+        game = Game.new
+        expect { game.play }.to raise_error(RuntimeError)
+      end
+    end
+
+    context 'after starting' do
+      it 'can be played if it has started' do
+        game = Game.new
+        game.start
+        expect { game.play }.to_not raise_error
+      end
+
+      it 'returns nil when not provided with anything' do
+        game = Game.new
+        game.start
+        expect(game.play).to be_nil
+      end
+    end
+
   end
 
 end

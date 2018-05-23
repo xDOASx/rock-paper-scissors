@@ -12,6 +12,7 @@ class Game
 
   def play
     raise 'Game must first be started' unless started?
+    nil
   end
 
 end
