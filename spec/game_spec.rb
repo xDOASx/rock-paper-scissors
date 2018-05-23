@@ -61,19 +61,25 @@ describe 'A game of rock paper scissors' do
         game = Game.new
         game.start
         expect(game.play(:rock, :scissors)).to eq("Rock beats scissors!")
+        expect(game.play(:scissors, :rock)).to eq("Rock beats scissors!")
       end
+      skip('is finished')
     end
 
     context 'rock vs paper' do
-
+      skip('returns "Paper beats rock!"')
+      skip('is finished')
     end
 
-    context 'scissors vs paper' do
 
+    context 'scissors vs paper' do
+      skip('returns "Scissors vs paper!"')
+      skip('is finished')
     end
 
     context 'a tie game' do
-
+      skip('returns "Tie game. Try again!"')
+      skip('is not finished')
     end
 
   end

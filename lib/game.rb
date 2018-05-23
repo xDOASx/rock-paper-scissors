@@ -16,7 +16,7 @@ class Game
     if (left == :rock && right == :scissors)
       "Rock beats scissors!"
     else
-      :FIXME
+      :UNKNOWN
     end
   end
 
