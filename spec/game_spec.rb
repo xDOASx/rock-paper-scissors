@@ -56,6 +56,14 @@ describe 'A game of rock paper scissors' do
       end
     end
 
+    context 'rock vs scissors' do
+      it 'announces the correct winner' do
+        game = Game.new
+        game.start
+        expect(game.play(:rock, :scissors)).to eq("Rock beats scissors!")
+      end
+    end
+
   end
 
 end

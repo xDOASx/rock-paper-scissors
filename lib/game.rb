@@ -13,7 +13,11 @@ class Game
   def play(left = nil, right = nil)
     raise 'Game must first be started' unless started?
     return nil unless (left && right)
-    return :FIXME
+    if (left == :rock && right == :scissors)
+      "Rock beats scissors!"
+    else
+      :FIXME
+    end
   end
 
 end
