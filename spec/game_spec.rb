@@ -6,4 +6,8 @@ describe 'A game of rock paper scissors' do
     Game.new
   end
 
+  it 'can start' do
+    Game.new.start
+  end
+
 end
