@@ -10,9 +10,10 @@ class Game
     self.started || false
   end
 
-  def play
+  def play(left = nil, right = nil)
     raise 'Game must first be started' unless started?
-    nil
+    return nil unless (left && right)
+    return :FIXME
   end
 
 end

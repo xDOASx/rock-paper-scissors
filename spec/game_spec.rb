@@ -42,6 +42,18 @@ describe 'A game of rock paper scissors' do
         game.start
         expect(game.play).to be_nil
       end
+
+      it 'returns nil when only provided one rock, paper or scissor' do
+        game = Game.new
+        game.start
+        expect(game.play(:FAKE)).to be_nil
+      end
+
+      it 'does not return nil when two objects are provided' do
+        game = Game.new
+        game.start
+        expect(game.play(:FAKE, :FAKE)).to_not be_nil
+      end
     end
 
   end
