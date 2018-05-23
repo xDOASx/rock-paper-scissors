@@ -10,4 +10,8 @@ class Game
     self.started || false
   end
 
+  def play
+    raise 'Game must first be started' unless started?
+  end
+
 end
