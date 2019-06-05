@@ -1,6 +1,6 @@
 # Rock, Paper, Scissors
 
-This is a learning situation, to practice for the CS 362 final exam, spring 2018.
+This is a learning situation, to demonstrate your capabilities regarding testing.
 
 ## Setup
 
