@@ -1,13 +1,14 @@
 require_relative '../lib/game'
 
 describe 'A game of rock paper scissors' do
+  let(:game) {Game.new}
 
   it 'exists' do
-    Game.new
+    game
   end
 
   it 'can start' do
-    Game.new.start
+    game.start
   end
 
   it 'is not initially started' do
